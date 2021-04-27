@@ -1,0 +1,30 @@
+.header_container{
+    height: 40px;
+    padding: 10px 0;
+    width: 100%;
+    line-height: 40px;
+    .logo{
+        width: 200px;
+        height: auto;
+        float: left;
+        margin-right: 40px;
+        img{
+            width: 100%;
+        }
+    }
+    .search{
+        float: left;
+        width: 400px;
+        height: 30px;
+    }
+    .user{
+        float: right;
+        color: blue;
+        font-size: 20px;
+        margin-right: 40px;
+    }
+}
+
+:is(section, article, aside, nav) :is(h1, h2, h3, h4, h5, h6) {
+    color: #BADA55;
+  }

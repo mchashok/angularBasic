@@ -1,0 +1,10 @@
+<div class="course_container ">
+  <div  class="card" *ngFor="let courseTopic of courseTopics">
+    <div class="card_title">{{courseTopic.title}}</div>
+    <!-- <div class="card_name">{{courseTopic.name.surName}}</div> -->
+    <div class="card_disc">{{courseTopic.disc}}</div>
+    <div class="card_author">Author : {{courseTopic.author}}</div>
+    <a href="javascript:void(0)" [routerLink]="['/coursetopic', courseTopic.id ]" class="card_link">{{courseTopic.viewDetails}}</a>
+  </div>
+  <div class="clear"></div>
+</div>
