@@ -1,0 +1,29 @@
+.courseDetails_container {
+  width: 100%;
+  border-radius: 10px;
+  background:#f7f7f7;
+  padding: 20px;
+
+  .courseDetails_img {
+      height: 300px;
+      overflow: hidden;
+      border-radius: 10px;
+    img {
+      width: 100%;
+    }
+  }
+  .courseDetails_content{
+      h1{
+          margin: 20px 0;
+          font-size: 20px;
+      }
+  }
+
+  button{
+      padding: 10px 20px;
+  }
+}
+
+.lastview-course {
+  margin-top: 40px;
+}

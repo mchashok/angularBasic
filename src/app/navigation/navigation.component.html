@@ -1,15 +1,5 @@
 <ul class="courseList">
-  <!-- *ngFor="let navList of navLists" -->
-  <li>
-      <a href="javascript:void(0)" routerLink="/">Home</a>
-  </li>
-  <li>
-      <a href="javascript:void(0)" routerLink="/uxcourse">UX</a>
-  </li>
-  <li>
-      <a href="javascript:void(0)" routerLink="/webcourse">UI</a>
-  </li>
-  <li>
-      <a href="javascript:void(0)" routerLink="/coursetopic">Courses</a>
+  <li *ngFor="let navList of navLists">
+      <a href="javascript:void(0)" [routerLink]="navList.path">{{navList.name}}</a>
   </li>
 </ul>

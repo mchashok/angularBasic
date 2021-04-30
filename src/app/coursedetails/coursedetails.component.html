@@ -1,3 +1,18 @@
-<p>
-  coursedetails works!
-</p>
+<div class="courseDetails_container">
+  <ng-container *ngFor="let courseInfoD of courseInfo">
+    <div class="courseDetails_img">
+      <img src="/assets/course{{courseInfoD.courseInfoImg}}.jpeg">
+    </div>
+    <div class="courseDetails_content">
+      <h1>{{courseInfoD.courseTitle}}</h1>
+      <p>{{courseInfoD.courseConent}}</p>
+    </div>
+    <div class="courseDetails_buy">
+      <button>Add to Cart</button>
+    </div>
+  </ng-container>
+</div>
+<div class="lastview-course">
+  <h3>Recent Viewed Courses</h3>
+  <app-course-topics></app-course-topics>
+</div>

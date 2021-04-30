@@ -41,7 +41,7 @@ import { ProfileComponent } from './profile/profile.component';
       {path: 'webcourse', component: WebcourseComponent },
       {path: 'profile', component: ProfileComponent },
       {path: 'coursetopic', component: CourseTopicsComponent },
-      {path: 'coursetopic/:id', component: CoursedetailsComponent },
+      {path: 'coursetopic/:url', component: CoursedetailsComponent },
       {path: '**', component: NotfoundComponent }
     ])
   ],
